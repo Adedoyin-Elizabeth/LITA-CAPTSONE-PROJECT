@@ -192,7 +192,17 @@ Monthly Sales Totals for the Current Year (Bottom Line Chart): This line chart s
 
 ![Ayodele Adedoyin capstone project 1a](https://github.com/user-attachments/assets/b5e326c7-129e-4639-9faa-35a2da58ea84)  ![DASHBOARD 2](https://github.com/user-attachments/assets/70a60bea-9a55-4cee-926f-6cd699f76d23)
 
-### RECOMENDATION
+### RECOMMENDATIONS
+-Increase marketing and inventory support in high-performing regions (South and North) and explore growth strategies for low-performing regions (East and West).
+
+-Investigate low-demand products (gloves, jackets, shirts, socks) and consider discontinuing or repositioning them. Focus on stocking and promoting best-sellers like shoes.
+
+-Implement a loyalty program for high-spending customers and personalize marketing to boost retention and repeat purchases.
+
+-Maximize sales during peak months (February, July) and create targeted campaigns for slower months (April, August) to ensure consistent revenue.
+-Use cross-selling, upselling, and product bundles to raise average transaction values.
+
+-Regularly monitor dashboards for trends and collect customer feedback to inform continuous improvement.
 
 
 ### Conclusion
