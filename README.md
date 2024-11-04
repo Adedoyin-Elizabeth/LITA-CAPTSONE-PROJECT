@@ -190,7 +190,10 @@ Monthly Sales Totals for the Current Year (Bottom Line Chart): This line chart s
 
 ### DASHBOARD
   https://app.powerbi.com/groups/me/reports/cbb81fb5-ab0e-40d1-98e2-9ce0892f797e/bad47c9561663a5827be?experience=power-bi
-![Ayodele Adedoyin capstone project 1a](https://github.com/user-attachments/assets/b5e326c7-129e-4639-9faa-35a2da58ea84)  ![DASHBOARD 2](https://github.com/user-attachments/assets/70a60bea-9a55-4cee-926f-6cd699f76d23)
+
+
+
+![Ayodele Adedoyin capstone project 1a](https://github.com/user-attachments/assets/b5e326c7-129e-4639-9faa-35a2da58ea84)   ![DASHBOARD 2](https://github.com/user-attachments/assets/70a60bea-9a55-4cee-926f-6cd699f76d23)
 
 ### RECOMMENDATIONS
 -Increase marketing and inventory support in high-performing regions (South and North) and explore growth strategies for low-performing regions (East and West).
