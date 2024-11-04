@@ -10,7 +10,7 @@
 ### Tool
 ### Exploratory Data Analysis
 ### Data Analysis And Visualization
-### Dashboard
+### Dashboard 
 ### Conclusion
 
 ## Good-will Couture Enterprise Data Analytics Project
@@ -189,7 +189,7 @@ Top 5 Customers by Total Purchase Amount (Middle Left Table): A table that lists
 Monthly Sales Totals for the Current Year (Bottom Line Chart): This line chart shows monthly sales totals for the current year, illustrating sales trends over time. The peaks and troughs in the chart help identify seasonal trends, such as higher sales in February and July, and lower sales in April and August. These insights can guide inventory and promotional planning.
 
 ### DASHBOARD
-
+  https://app.powerbi.com/groups/me/reports/cbb81fb5-ab0e-40d1-98e2-9ce0892f797e/bad47c9561663a5827be?experience=power-bi
 ![Ayodele Adedoyin capstone project 1a](https://github.com/user-attachments/assets/b5e326c7-129e-4639-9faa-35a2da58ea84)  ![DASHBOARD 2](https://github.com/user-attachments/assets/70a60bea-9a55-4cee-926f-6cd699f76d23)
 
 ### RECOMMENDATIONS
