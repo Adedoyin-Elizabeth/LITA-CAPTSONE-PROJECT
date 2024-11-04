@@ -62,10 +62,79 @@ The purpose of this EDA is to gain a preliminary understanding of the dataset th
 14.Identifying products with no sales in the last quarter.
 
 ### Data Analysis 
+```SQL
+
+ SQL
+Create Database Sale_DB
+
+Select* from [dbo].[sales]
+
+ SELECT Product, SUM(Quantity) AS Sum_of_Quantity
+FROM [dbo].[sales]
+GROUP BY Product
 
 
+select Region, count (Quantity) AS Sum_of_Quantity
+from [dbo].[sales]
+group by Region
 
 
+select product, Max (Total_Revenue) as highest_selling_product
+from [dbo].[sales]
+group by product
+
+
+select product, SUM (Total_Revenue) as TOTAL_PRODUCT_REVENUE
+from [dbo].[sales]
+group by product
+
+
+SELECT * FROM dbo.sales
+SELECT 
+    FORMAT(orderdate, 'yyyy-MM') AS month,
+    SUM(Quantity) AS total_sales
+FROM 
+    sales
+WHERE 
+    YEAR(orderdate) = YEAR(GETDATE())
+GROUP BY 
+    FORMAT(orderdate, 'yyyy-MM')
+ORDER BY 
+    month
+
+	SELECT TOP 5 
+    customer_id, 
+    SUM(Total_revenue) AS total_purchase
+FROM 
+    sales
+GROUP BY 
+    customer_id
+ORDER BY 
+    total_purchase DESC
+
+
+	SELECT 
+    region, 
+    SUM(Total_revenue) AS total_sales,
+    ROUND(SUM(Total_revenue) / (SELECT SUM(Total_revenue) FROM sales) * 100, 2) AS percentage_contribution
+FROM 
+    sales
+GROUP BY 
+    region
+ORDER BY 
+    percentage_contribution DESC
+ 
+	SELECT DISTINCT product
+FROM sales
+WHERE product NOT IN (
+    SELECT product
+    FROM sales 
+    WHERE Orderdate >= DATEADD(QUARTER, -1, DATEADD(QUARTER, DATEDIFF(QUARTER, 0, GETDATE()), 0))
+      AND orderdate < DATEADD(QUARTER, 0, DATEADD(QUARTER, DATEDIFF(QUARTER, 0, GETDATE()), 0))
+)
+
+Select * from [dbo].[sales]
+```
 ### Data Visualization
 Pivot Table in Excel
 
@@ -121,10 +190,11 @@ Monthly Sales Totals for the Current Year (Bottom Line Chart): This line chart s
 
 ### DASHBOARD
 
-
 ![Ayodele Adedoyin capstone project 1a](https://github.com/user-attachments/assets/b5e326c7-129e-4639-9faa-35a2da58ea84)  ![DASHBOARD 2](https://github.com/user-attachments/assets/70a60bea-9a55-4cee-926f-6cd699f76d23)
 
+### RECOMENDATION
 
 
 ### Conclusion
 The South region generates the highest revenue, contributing over 32% of total sales, followed by the North. This suggests that the company may benefit from focusing on sustaining and growing these regions while identifying strategies to improve performance in the East and West. Certain products, such as gloves, jackets, shirts, and socks, have no recorded sales, indicating potential issues with market demand, inventory management, or product positioning. These items may need further analysis to determine if they should be repositioned, marketed differently, or even phased out. The top five customers contribute significantly to total revenue, which highlights the importance of customer loyalty and high-value clientele. Targeted marketing strategies could be implemented to maintain and enhance relationships with these high-spending customers. Monthly sales patterns reveal peaks in February and July, indicating potential seasonality or successful promotional periods. Conversely, the drop in sales during April and August suggests an opportunity for targeted campaigns during these slower months to boost engagement and sales. With a total of 50,000 transactions and an average sale value of $29.25, the company demonstrates a stable transaction volume. However, there may be room to increase the average transaction value through cross-selling or upselling strategies.
+
